@@ -86,60 +86,10 @@ figcaption {
 
 #images {
     display: grid;
-    grid-template-areas: 
-        "Chile"
-        "Guatemala"
-        "Hawaii"
-        "Iran"
-        "Ireland"
-        "Italy"
-        "Moab"
-        "Rocky-Mountains"
-        "Switzerland"
-        "UK"
-        "USA"
-        "Wyoming";
+    grid-template-columns: 1fr;
 }
 
-#Chile {
-    grid-area: Chile;
-}
 
-#Guatemala {
-    grid-area: Guatemala;
-}
-
-#Hawaii {
-    grid-area: Hawaii;
-}
-
-#Iran {
-    grid-area: Iran;
-}
-
-#Moab {
-    grid-area: Moab;
-}
-
-#Rocky-Mountains {
-    grid-area: Rocky-Mountains
-}
-
-#Switzerland {
-    grid-area: Switzerland;
-}
-
-#UK {
-    grid-area: UK;
-}
-
-#USA {
-    grid-area: USA;
-}
-
-#Wyoming {
-    grid-area: Wyoming;
-}
 
 .italy {
     color: #000000;
@@ -220,7 +170,6 @@ footer {
 @media screen and (min-width: 880px) {
     body {
         width: 880px;
-        margin: 0 auto;
     }
     
     nav {
@@ -235,19 +184,8 @@ footer {
     #images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "Chile Guatemala"
-        "Hawaii Iran"
-        "Ireland Italy"
-        "Moab Rocky-Mountains"
-        "Switzerland UK"
-        "USA Wyoming";
     }
-
-    div #images {
-        margin: 0 auto;
-    }
+    
 
   
 
