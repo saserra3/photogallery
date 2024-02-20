@@ -1,0 +1,254 @@
+html {
+    background-color: #000000;
+}
+
+
+body {
+    width: 485px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+
+h1  {
+    background-color: #ffffff;
+    margin-top: 0;
+    color: #007d7b;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+    margin: 30px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a {
+    color: #ffffff;
+}
+
+[href="#top"] {
+    bottom:5px;
+    right: 0px;
+    line-height: 20px;
+    position:fixed;
+    padding: 10px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: black;
+}
+
+#about {
+    margin-left: 20px;
+}
+
+#about h2 {
+    padding-top: 10px;
+}
+
+#gallery p {
+    margin-left: 20px;
+}
+
+img {
+    align-content: center;
+}
+
+figcaption {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#images {
+    display: grid;
+    grid-template-areas: 
+        "Chile"
+        "Guatemala"
+        "Hawaii"
+        "Iran"
+        "Ireland"
+        "Italy"
+        "Moab"
+        "Rocky-Mountains"
+        "Switzerland"
+        "UK"
+        "USA"
+        "Wyoming";
+}
+
+#Chile {
+    grid-area: Chile;
+}
+
+#Guatemala {
+    grid-area: Guatemala;
+}
+
+#Hawaii {
+    grid-area: Hawaii;
+}
+
+#Iran {
+    grid-area: Iran;
+}
+
+#Moab {
+    grid-area: Moab;
+}
+
+#Rocky-Mountains {
+    grid-area: Rocky-Mountains
+}
+
+#Switzerland {
+    grid-area: Switzerland;
+}
+
+#UK {
+    grid-area: UK;
+}
+
+#USA {
+    grid-area: USA;
+}
+
+#Wyoming {
+    grid-area: Wyoming;
+}
+
+.italy {
+    color: #000000;
+    bottom: 30px;
+    position: relative;
+}
+
+.guatemala, .wyoming {
+    color: #ffffff;
+    bottom: 270px;
+    position: relative;
+}
+
+.iran, .ireland {
+    color: #000000;
+    bottom: 620px;
+    position: relative;
+}
+
+.rocky, .switzerland, .uk, .usa {
+    color: #000000;
+    bottom: 270px;
+    position: relative;
+}
+
+.chile, .hawaii, .moab {
+    color: #ffffff;
+    bottom: 30px;
+    position: relative;
+}
+
+
+#contact {
+    color: #ffffff;
+}
+
+#contact p {
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    visibility: hidden;
+}
+
+fieldset legend {
+    visibility: hidden;
+}
+
+label, input {
+    visibility: visible;
+    margin-top: 5px;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+input {
+    color: #007d7b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+label {
+    padding-top: 10px;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 880px) {
+    body {
+        width: 880px;
+        margin: 0 auto;
+    }
+    
+    nav {
+        margin-left: 200px;
+        margin-right: 230px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "Chile Guatemala"
+        "Hawaii Iran"
+        "Ireland Italy"
+        "Moab Rocky-Mountains"
+        "Switzerland UK"
+        "USA Wyoming";
+    }
+
+    div #images {
+        margin: 0 auto;
+    }
+
+  
+
+}
