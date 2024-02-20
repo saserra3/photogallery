@@ -100,37 +100,14 @@ figcaption {
     grid-template-columns: 1fr;
 }
 
-
-
-.italy {
-    color: #000000;
-    bottom: 30px;
-    position: relative;
+figure {
+    margin: 15px;
+    margin-bottom: -5px;
+    margin-top: 0px;
 }
 
-.guatemala, .wyoming {
-    color: #ffffff;
-    bottom: 270px;
-    position: relative;
-}
 
-.iran, .ireland {
-    color: #000000;
-    bottom: 620px;
-    position: relative;
-}
 
-.rocky, .switzerland, .uk, .usa {
-    color: #000000;
-    bottom: 270px;
-    position: relative;
-}
-
-.chile, .hawaii, .moab {
-    color: #ffffff;
-    bottom: 30px;
-    position: relative;
-}
 
 
 #contact {
@@ -190,7 +167,32 @@ footer {
 }
 
 
-
+@media screen and (min-width: 485px) {
+    .italy {
+        color: #000000;
+        bottom: 30px;
+        position: relative;
+    }
+    
+    
+    .iran, .ireland {
+        color: #000000;
+        bottom: 670px;
+        position: relative;
+    }
+    
+    .rocky, .switzerland, .uk, .usa, .guatemala, .wyoming {
+        color: #000000;
+        bottom: 290px;
+        position: relative;
+    }
+    
+    .chile, .hawaii, .moab {
+        color: #ffffff;
+        bottom: 30px;
+        position: relative;
+    }
+}
 
 
 @media screen and (min-width: 880px) {
@@ -210,6 +212,15 @@ footer {
     #images {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+
+    .iran, .ireland {
+        padding-top: 50px;
+    } 
+
+    .guatemala, .switzerland, .usa, .rocky, .uk, .wyoming {
+        padding-top: 15px;
     }
     
     figure {
