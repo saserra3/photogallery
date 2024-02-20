@@ -28,9 +28,11 @@ h2 {
     text-transform: uppercase;
 }
 
+
 p {
     font-size: 1.25em;
 }
+
 
 
 nav ul {
@@ -69,6 +71,10 @@ a {
 
 #about h2 {
     padding-top: 10px;
+}
+
+img {
+    width: 100%;
 }
 
 #gallery p {
@@ -161,11 +167,28 @@ label {
     padding-top: 10px;
 }
 
+input[type="submit"] {
+    width: 75%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #007d7b;
+    color: #ffffff;
+    border-radius: 18px;
+    
+}
+
 footer {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
 }
+
+small {
+    font-size: 1em;
+}
+
+
 
 @media screen and (min-width: 880px) {
     body {
@@ -186,6 +209,12 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     
+    
+    form {
+        width: 600px;
+        margin: 0 auto;
+    }
+
 
   
 
