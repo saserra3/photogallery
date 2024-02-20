@@ -29,11 +29,6 @@ h2 {
 }
 
 
-p {
-    font-size: 1.25em;
-}
-
-
 
 nav ul {
     display: grid;
@@ -65,6 +60,12 @@ a {
     background-color: black;
 }
 
+a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+
 #about {
     margin-left: 20px;
 }
@@ -79,6 +80,10 @@ img {
 
 #gallery p {
     margin-left: 20px;
+}
+
+p {
+    font-size: 1.25em;
 }
 
 img {
@@ -153,7 +158,7 @@ label, input {
     margin-top: 5px;
 }
 
-figcaption, label, input, small {
+figcaption, label, input {
     font-size: 1em;
 }
 
@@ -184,9 +189,7 @@ footer {
     color: #ffffff;
 }
 
-small {
-    font-size: 1em;
-}
+
 
 
 
@@ -209,13 +212,44 @@ small {
         grid-template-columns: 1fr 1fr;
     }
     
-    
+    figure {
+        margin: 10px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+
+    }
+
     form {
         width: 600px;
         margin: 0 auto;
     }
 
+}
 
+@media screen and (min-width: 1300px) {
+    body {
+        width: 1300px;
+    }
   
+    nav {
+        text-align: right;
+        padding-left: 680px;
+        width: 35%;
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    figure {
+        margin: 10px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+
+    }
+    .iran, .ireland {
+        margin-top: 10px;
+    }
 
 }
